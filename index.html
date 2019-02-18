@@ -28,7 +28,7 @@
 			</nav>
 			<img src="img/welcome.png" alt="Изображения приветствия" class="welcome-img" >
 		</header>
-		<h1 class="visible-hide" >Преимущества городка Седона</h1>
+		<h1 class="visually-hidden" >Преимущества городка Седона</h1>
 		<section class="review">
 			<p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
 			<h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</h2>
@@ -99,13 +99,35 @@
 				Укажите предпологаемые даты поездки, и мы покажем Вам лучшие предложения гостинниц в Седоне
 			</p>
 			<h2 class="search-title">Поиск гостинниц в Седоне</h2>
-			<!-- <form>
-				<span>ДАТА ЗАЕЗДА: <span><input></input>
-				<span>ДАТА ВЫЕЗДА: <span><input></input>
-				<span>ВЗРОСЛЫЕ: <span><input></input>
-				<span>ДЕТИ: <span><input></input>
-				<input type="button" value="Найти">
-			</form> -->
+			<form class="search-hotels" method="post" action="https://echo.htmlacademy.ru">
+				<ul>
+					<li>
+						<label>
+							<span>Дата заезда: <span>
+							<input type="data" name="arrival_date" placeholder="24 апреля 2017">
+						</label>
+					</li>
+					<li>
+						<label>
+							<span>Дата выезда : <span>
+							<input type="data" name="departure_date" placeholder="4 июля 2017">
+						</label>
+					</li>
+					<li>
+						<label for="amount_adults"><span>Взрослые : <span></label>
+						<button class="amount_button">-</button>
+						<input id="amount_adults" name="amount_adults">
+						<button class="amount_button">+</button>
+					</li>
+					<li>
+						<label for="amount_children"><span>Дети : <span></label>
+						<button class="amount_button">-</button>
+						<input id="amount_children" name="amount_children">
+						<button class="amount_button">+</button>
+					</li>
+				</ul>
+				<button class="button" type="submite">Найти</button>
+			</form>
 		</section>
 		
 		
