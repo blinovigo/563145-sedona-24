@@ -100,33 +100,24 @@
 			</p>
 			<h2 class="search-title">Поиск гостинниц в Седоне</h2>
 			<form class="search-hotels" method="post" action="https://echo.htmlacademy.ru">
-				<ul>
-					<li>
-						<label>
-							<span>Дата заезда: <span>
-							<input type="data" name="arrival_date" placeholder="24 апреля 2017">
-						</label>
-					</li>
-					<li>
-						<label>
-							<span>Дата выезда : <span>
-							<input type="data" name="departure_date" placeholder="4 июля 2017">
-						</label>
-					</li>
-					<li>
-						<label for="amount_adults"><span>Взрослые : <span></label>
-						<button class="amount_button">-</button>
-						<input id="amount_adults" name="amount_adults">
-						<button class="amount_button">+</button>
-					</li>
-					<li>
-						<label for="amount_children"><span>Дети : <span></label>
-						<button class="amount_button">-</button>
-						<input id="amount_children" name="amount_children">
-						<button class="amount_button">+</button>
-					</li>
-				</ul>
-				<button class="button" type="submite">Найти</button>
+				<label>
+					Дата заезда :
+					<input type="data" name="arrival_date" placeholder="24 апреля 2017">
+				</label>
+			
+				<label>
+					Дата выезда :
+					<input type="data" name="departure_date" placeholder="4 июля 2017">
+				</label>
+				<label for="amount_adults">Взрослые : </label>
+				<button class="amount_button">-</button>
+				<input id="amount_adults" name="amount_adults">
+				<button class="amount_button">+</button>
+				<label for="amount_children">Дети : </label>
+				<button type="button" class="amount_button">-</button>
+				<input id="amount_children" name="amount_children">
+				<button type="button" class="amount_button">+</button>
+				<button class="button" type="submit">Найти</button>
 			</form>
 		</section>
 		
