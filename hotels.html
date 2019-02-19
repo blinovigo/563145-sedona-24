@@ -29,8 +29,40 @@
 		</header>
 		<h1 class="visible-hide">Поиск гостинницы</h1>
 		<section class="main-search">
-		<!-- Форма с параметрами поиска -->
-		
+		 <form method="post" action="https://echo.htmlacademy.ru">
+			<div class="add-service-filter">
+				<p>Инфраструктура:</p>
+				<label><input name="filter-pool" type="checkbox"> Бассейн </label>
+				<label><input type="filter-parking"> Парковка </label>
+				<label><input type="filter-wifi"> Wi-Fi </label>
+			</div>
+			<div class="type-houы-filter">
+				<p>Тип жилья:</p>
+				<label><input name="filter-hotel" type="checkbox"> Гостинница </label>
+				<label><input name="filter-motel" type="checkbox"> Мотель </label>
+				<label><input name="filter-apartments" type="checkbox"> Апартаменты </label>
+			</div>
+			<div class="price-filter">
+				<p>Стоимость в сутки (Р):</p>
+				<p>
+					<span>От <input name="min-price" value="0"></span>
+					<span>До <input name="max-price" value="3000"></span>
+				</p>
+				<!-- У меня пока нет идей как сделать ползунок -->
+				<button type="submit">Показать</button>
+			</div>
+		 </form>
+		 <div class="filter-links">
+			<span>Найдено:3</span>
+			<a href="">Сортировка:</a>
+			<a href="">По цене:</a>
+			<a href="">По типу</a>
+			<a href="">По рейтингу</a>
+			<p>
+				<a>&#9650;</a>
+				<a>&#9660;</a>
+			</p>
+		 </div>
 		</section>
 		<section class="result-search">
 			<ul class="result-search-list">
