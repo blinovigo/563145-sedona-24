@@ -1,0 +1,208 @@
+body { margin: 0 }
+img { max-width: 100% }
+a { text-decoration: none }
+
+.feedback { color: black }
+.feedback ul { list-style: none }
+.feedback p { margin-bottom: 0 }
+
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+main{
+	font-family: 'PT Sans', sans-serif;
+}
+
+.main-header{
+	background:url('../img/mount_sedons.jpg') no-repeat;
+}
+.main-header nav{
+	background-color:white;
+}
+
+.linl-list-item a{
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 26px;
+	color:black;
+}
+
+.review>p{
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
+	color:black;
+}
+.review h2{
+	font-size: 14px;
+	line-height: 26px;
+	color:#333333;
+}
+
+.reason-title{
+	background-color:#81b3d2;
+}
+.reason-1-title h3{
+	font-size: 21px;
+	font-weight: bold;
+	line-height:21px;
+	color:white;
+}
+.reason-1-title p{
+	font-size: 14px;
+	line-height:21px;
+	color:#333333;
+}
+
+.reason-1-review-list h5{
+	font-size: 21px;
+	font-weight: bold;
+	line-height:21px;
+	color:black;
+}
+.reason-1-review-list p{
+	font-size: 14px;
+	line-height:21px;
+	color:#333333;
+}
+
+.other-reason-title{
+	background-color:#f2f2f2;
+}
+
+.other-reason h3{
+	font-size: 21px;
+	font-weight: bold;
+	line-height:21px;
+	color:white;
+}
+.other-reason p{
+	font-size: 14px;
+	line-height:21px;
+	color:white;
+}
+
+.other-reason-title h3{
+	font-size: 21px;
+	font-weight: bold;
+	line-height:21px;
+	color:black;
+}
+.other-reason-title p{
+	font-size: 21px;
+	font-weight: bold;
+	line-height:21px;
+	color:rgba(0, 1, 1, 0.2);
+}
+
+
+
+.search-text{
+	font-size: 14px;
+	line-height:24px;
+	color:#333333;
+}
+.search-text span{
+	font-size: 30px;
+	font-weight: bold;
+	line-height:36px;
+	color:black;
+}
+
+.search-title {
+	font-size: 21px;
+	font-weight: bold;
+	line-height:26px;
+	color:white;
+	background-color:#766357;
+}
+
+.search-hotels-background{
+	background:url('../img/map.jpg') no-repeat;
+}
+
+.search-hotels{
+	font-size: 14px;
+	font-weight: bold;
+	line-height:26px;
+	color:black;
+	background-color:white;
+}
+
+.search-hotels input{
+	background-color:#f2f2f2;
+}
+.amount_button{
+	background-color:#f2f2f2;
+}
+
+.submit-button{
+	font-size: 21px;
+	font-weight: bold;
+	line-height:26px;
+	color:white;
+	background-color:#81b3d2;
+}
+
+/* hotels.html */
+.result-search-item-title{
+	font-size: 21px;
+	font-weight: bold;
+	line-height:26px;
+	color:black;
+}
+.result-search-item-type {
+	font-size:14px;
+	line-height:21px;
+	color:#333333;
+}
+
+.result-search-item-price{
+	font-size:14px;
+	line-height:21px;
+	color:#333333;
+}
+
+.result-search-item-link-more{
+	font-size:14px;
+	font-weight: bold;
+	line-height:21px;
+	color:white;
+	background-color: #81b3d2;
+}
+.result-search-item-link-reserve{
+	font-size:14px;
+	font-weight: bold;
+	line-height:21px;
+	color:white;
+	background-color: #766357;
+}
+.result-search-item-right p{
+	font-size:14px;
+	line-height:21px;
+	color:#666666;
+	background-color: #f2f2f2;
+}
+
+
+
+
+
+/* footer */
+.main-footer{
+	background-color:rgba(0, 1, 1, 0.2);
+}
+
+.main-footer-soc-link-item a{
+	font-size: 21px;
+	font-weight: bold;
+	line-height:26px;
+	color:black;
+	background-color:#81b3d2;
+}
+
+.main-footer span{
+	font-size: 14px;
+	line-height:26px;
+	color:black;
+}
