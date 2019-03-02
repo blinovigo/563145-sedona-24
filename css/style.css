@@ -1,6 +1,8 @@
-body { margin: 0 }
-img { max-width: 100% }
-a { text-decoration: none }
+body { margin: 0; }
+img { max-width: 100%; }
+a { text-decoration: none;
+	color:inherit;
+	}
 
 .feedback { color: black }
 .feedback ul { list-style: none }
@@ -41,17 +43,16 @@ main{
 
 .reason-title{
 	background-color:#81b3d2;
+	color:#f2f2f2;
 }
 .reason-1-title h3{
 	font-size: 21px;
 	font-weight: bold;
 	line-height:21px;
-	color:white;
 }
 .reason-1-title p{
 	font-size: 14px;
 	line-height:21px;
-	color:#333333;
 }
 
 .reason-1-review-list h5{
