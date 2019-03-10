@@ -13,32 +13,67 @@ html { box-sizing: border-box; }
 
 main{
 	font-family: 'PT Sans', sans-serif;
+	text-align:center;
+	min-width:1200px;
 }
 
 .main-header{
 	background:url('../img/mount_sedons.jpg') no-repeat;
+	background-size:cover;
+    display: flex;
+    flex-direction: column;
 }
 .main-header nav{
 	background-color:white;
+	height:56px;
 }
 
-.linl-list-item a{
-	font-size: 14px;
-	font-weight: bold;
-	line-height: 26px;
-	color:black;
+.link-list{
+	list-style:none;
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+    padding: 0;
 }
+
+.link-list li{
+	width:239px;
+	text-align:center;
+
+}
+
+.link-list-item a{
+	font-size: 14px;
+    font-weight: bold;
+    line-height: 26px;
+    display: inline-block;
+    margin: 15px 0 15px 0;
+    color: black;
+}
+
+.link-list-item .sedana-logo{
+	margin:0;
+}
+
+.welcome-img{
+	margin: 76px auto 79px auto;
+}
+
+
 
 .review>p{
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
 	color:black;
+	margin:61px auto 0 auto;
+	width:440px;
 }
 .review h2{
 	font-size: 14px;
 	line-height: 26px;
 	color:#333333;
+	margin:38px auto 56px auto;
 }
 
 .reason-title{
@@ -102,12 +137,16 @@ main{
 	font-size: 14px;
 	line-height:24px;
 	color:#333333;
+	width:434px;
+	margin:57px auto 52px auto;
 }
 .search-text span{
 	font-size: 30px;
 	font-weight: bold;
 	line-height:36px;
 	color:black;
+	display:block;
+	margin-bottom:36px;
 }
 
 .search-title {
@@ -116,26 +155,80 @@ main{
 	line-height:26px;
 	color:white;
 	background-color:#766357;
+	height:86px;
+	width:568px;
+	margin: auto;
+    padding: 30px 0;
 }
 
 .search-hotels-background{
 	background:url('../img/map.jpg') no-repeat;
+	background-size:cover;
+	height:593px;
 }
 
 .search-hotels{
 	font-size: 14px;
-	font-weight: bold;
-	line-height:26px;
-	color:black;
-	background-color:white;
+    font-weight: bold;
+    line-height: 26px;
+    color: black;
+    background-color: white;
+    min-height: 395px;
+    width: 568px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 55px;
+}
+
+.data-input{
+	display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.data-input input{
+	width:346px;
+	background: url(../img/calendar.png) no-repeat;
+    background-position: 97% 50%;
+    padding-left: 12px;
+    padding-right: 7px;
+}
+
+.search-hotels p{
+	margin:0;
 }
 
 .search-hotels input{
 	background-color:#f2f2f2;
+	border:none;
+	height:38px;
 }
+
 .amount_button{
-	background-color:#f2f2f2;
+	background-color: #f2f2f2;
+    border: none;
+    height: 38px;
+    width: 38px;
 }
+
+.amount-block-wrapper{
+	display:flex;
+	justify-content: space-between;
+}
+
+.amount-block-wrapper input{
+	height: 38px;
+    width: 38px;
+	padding:0;
+}
+
+.amount-block-wrapper label{
+	padding-right: 41px;
+}
+
 
 .submit-button{
 	font-size: 21px;
@@ -143,6 +236,10 @@ main{
 	line-height:26px;
 	color:white;
 	background-color:#81b3d2;
+	border:none;
+	margin-top:54px;
+	height:58px;
+	width:458px;
 }
 
 /* hotels.html */
@@ -191,19 +288,66 @@ main{
 
 /* footer */
 .main-footer{
-	background-color:rgba(0, 1, 1, 0.2);
+    position: absolute;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 101px 0 132px;
+    height: 120px;
+    background: rgba(255,255,255,0.9);
 }
 
-.main-footer-soc-link-item a{
+.main-footer-home-link{
 	font-size: 21px;
 	font-weight: bold;
 	line-height:26px;
 	color:black;
-	background-color:#81b3d2;
+	
 }
 
-.main-footer span{
+.main-footer-soc-link-list{
+	display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0;
+    width: 150px;
+}
+
+.main-footer-soc-link-item{
+	background-color:#81b3d2;
+	height:48px;
+	width:46px;
+    display: inline-block;
+}
+
+.main-footer-soc-link-item{
+	padding:16px 15px;
+}
+
+.main-footer-studio-link img{
+	height:41px;
+	width:115px;
+}
+
+.main-footer-studio{
+	display: flex;
+    align-items: center;
+}
+
+.main-footer-studio span{
 	font-size: 14px;
 	line-height:26px;
 	color:black;
+	padding-right:8px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }

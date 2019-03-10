@@ -11,15 +11,17 @@
 	<main>
 		<header class="main-header">
 			<nav>
-				<a href="index.html">
-					<img src="img/logo.png" alt="Логотип" class="Sedana-logo">
-				</a>
 				<ul class="link-list">
 					<li class="link-list-item">
 						<a href="">Информация</a>
 					</li>
 					<li class="link-list-item">
 						<a href="">Фото и видео</a>
+					</li>
+					<li class="link-list-item">
+						<a href="index.html" class="sedana-logo">
+							<img src="img/logo.png" alt="Логотип" >
+						</a>
 					</li>
 					<li class="link-list-item">
 						<a href="">Карта штата</a>
@@ -30,7 +32,7 @@
 				</ul>
 			</nav>
 			<img src="img/welcome.png" alt="Изображения приветствия" class="welcome-img" >
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 57"><path d="M0 57V0l250 24V0l350 57L950 0v24l250-24v57H0z" fill="#fff"/></svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 57" class="header-bottom"><path d="M0 57V0l250 24V0l350 57L950 0v24l250-24v57H0z" fill="#fff"/></svg>
 		</header>
 		<h1 class="visually-hidden" >Преимущества городка Седона</h1>
 		<section class="review">
@@ -105,37 +107,37 @@
 		<section class="search">
 			<p class="search-text">
 				<span>Заинтересовались? </span>
-				Укажите предпологаемые даты поездки, и мы покажем Вам лучшие предложения гостинниц в Седоне
+				Укажите предпологаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостинниц в Седоне
 			</p>
 			<h2 class="search-title">Поиск гостинниц в Седоне</h2>
 			<div class="search-hotels-background">
 				<form class="search-hotels" method="post" action="https://echo.htmlacademy.ru">
-					<label>
+					<label class="data-input">
 						Дата заезда :
 						<input type="data" name="arrival_date" placeholder="24 апреля 2017">
 					</label>
-				
-					<label>
+					<label class="data-input">
 						Дата выезда :
 						<input type="data" name="departure_date" placeholder="4 июля 2017">
 					</label>
-					<p class="search-hotels-adults">
-						<label for="amount_adults">Взрослые : </label>
-						<button class="amount_button">-</button>
-						<input id="amount_adults" name="amount_adults">
-						<button class="amount_button">+</button>
-					</p>
-					</p class="search-hotels-children">
-						<label for="amount_children">Дети : </label>
-						<button type="button" class="amount_button">-</button>
-						<input id="amount_children" name="amount_children">
-						<button type="button" class="amount_button">+</button>
-					</p>
+					<div class="amount-block-wrapper">
+						<p class="search-hotels-adults">
+							<label for="amount_adults">Взрослые : </label>
+							<button class="amount_button">-</button>
+							<input id="amount_adults" name="amount_adults">
+							<button class="amount_button">+</button>
+						</p>
+						<p class="search-hotels-children">
+							<label for="amount_children">Дети : </label>
+							<button type="button" class="amount_button">-</button>
+							<input id="amount_children" name="amount_children">
+							<button type="button" class="amount_button">+</button>
+						</p>
+					</div>
 					<button class="submit-button" type="submit">Найти</button>
 				</form>
 			</div>
 		</section>
-		
 		
 		<footer class="main-footer">
 			<a class="main-footer-home-link" href="">#VISITSEDONA</a>
@@ -144,7 +146,7 @@
 				<li class="main-footer-soc-link-item"><a href=""><img src="img/fb-icon.svg"> </a></li>
 				<li class="main-footer-soc-link-item"><a href=""><img src="img/youtub-icon.svg"> </a></li>
 			</ul>
-			<p>
+			<p class="main-footer-studio">
 				<span>Website by</span>
 				<a class="main-footer-studio-link" href="https://htmlacademy.ru/intensive/htmlcss">
 					<img src="img/logo-name.svg" alt="htmlAcademy">
