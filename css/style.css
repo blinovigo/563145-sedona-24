@@ -23,6 +23,7 @@ html {
 
 main{
 	font-family: 'PT Sans', sans-serif;
+	text-transform:uppercase;
 }
 
 .main-header{
@@ -34,6 +35,7 @@ main{
 .main-header nav{
 	background-color:white;
 	height:56px;
+	
 }
 
 .link-list{
@@ -67,7 +69,9 @@ main{
 	margin: 76px auto 79px auto;
 }
 
-
+.review{
+	text-align:center;
+}
 
 .review>p{
 	font-size: 21px;
@@ -81,21 +85,50 @@ main{
 	font-size: 14px;
 	line-height: 26px;
 	color:#333333;
-	margin:38px auto 56px auto;
+	margin: 32px auto 50px auto;
+}
+
+.reason-1{
+	display:flex;
+	min-height:256px;
+	
 }
 
 .reason-title{
 	background-color:#81b3d2;
 	color:#f2f2f2;
+	width:400px;
+	padding:46px 60px;
+	text-align:center;
 }
-.reason-1-title h3{
+.reason-title h3{
 	font-size: 21px;
 	font-weight: bold;
-	line-height:21px;
+	padding:0;
+	margin:0;
 }
-.reason-1-title p{
+.reason-title p{
 	font-size: 14px;
-	line-height:21px;
+    margin: 19px 0 0 0;
+
+}
+
+.reason-1-img{
+	height:100%;
+}
+
+.reason-1-review-list{
+	display:flex;
+	list-style:none;
+	justify-content:space-around;
+	padding-top: 60px;
+	padding-bottom:85px;
+	height:330px;
+	margin:0;
+}
+
+.reason-1-review-item{
+	width:252px;
 }
 
 .reason-1-review-list h5{
@@ -103,6 +136,8 @@ main{
 	font-weight: bold;
 	line-height:21px;
 	color:black;
+	margin-top:29px;
+	margin-bottom:21px;
 }
 .reason-1-review-list p{
 	font-size: 14px;
@@ -110,8 +145,13 @@ main{
 	color:#333333;
 }
 
+.other-reason{
+	display:flex;
+}
+
 .other-reason-title{
-	background-color:#f2f2f2;
+	background-color: #f2f2f2;
+    display: flex;
 }
 
 .other-reason h3{
@@ -126,17 +166,24 @@ main{
 	color:white;
 }
 
+.other-reason-title section{
+	padding:50px 95px 63px;
+}
+
 .other-reason-title h3{
 	font-size: 21px;
 	font-weight: bold;
 	line-height:21px;
 	color:black;
+	margin:0;
 }
 .other-reason-title p{
-	font-size: 21px;
+	font-size: 14px;
 	font-weight: bold;
 	line-height:21px;
 	color:rgba(0, 1, 1, 0.2);
+	margin:0;
+	margin-top:19px;
 }
 
 
@@ -145,8 +192,8 @@ main{
 	font-size: 14px;
 	line-height:24px;
 	color:#333333;
-	width:434px;
 	margin:57px auto 52px auto;
+	text-align:center;
 }
 .search-text span{
 	font-size: 30px;
@@ -167,6 +214,7 @@ main{
 	width:568px;
 	margin: auto;
     padding: 30px 0;
+	text-align:center;
 }
 
 .search-hotels-background{
@@ -252,10 +300,113 @@ main{
 
 /* hotels.html */
 
+.main-search form{
+	background: url(../img/filter-mount_sedons.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 217px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+	padding:31px 72px;
+}
+
+.left-filter{
+	display:flex;
+	
+}
+
+.add-service-filter{
+	display: flex;
+    flex-direction: column;
+	padding-right:115px;
+}
+
+.filter-title{
+	margin: 0 0 5px 0;
+}
+
+.filter-checkbox{
+	margin-top: 23px;
+}
+
+.type-hour-filter{
+	display: flex;
+    flex-direction: column;
+}
+
+.price-filter{
+	display: flex;
+    flex-direction: column;
+}
+
+.price-input{
+	background-color: rgba(0,0,0,0);
+    border: none;
+	color:inherit;
+	text-align:center;
+}
+
+.price-value{
+	border: 1px solid white;
+}
+
+.price-filter span:first-child{
+	border-right: 1px solid white;
+}
+
+.price-filter button{
+	width: 133px;
+    height: 32px;
+    align-self: center;
+    border: 1px solid white;
+    background-color: rgba(0,0,0,0);
+	color:inherit;
+}
+
 .result-search-list{
 	padding:0;
 	margin:0;
 }
+
+.filter-links{
+	display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 29px 72px;
+	font-weight:bold;
+}
+
+.filter-links-left{
+	display: flex;
+	justify-content: space-between;
+	width: 517px;
+}
+
+.filter-result{
+	line-height:26px;
+	font-size:21px;
+	padding-right:49px;
+}
+
+.filter-links-left p{
+	font-size:12px;
+	line-height:18px;
+	margin: 0;
+}
+
+.filter-links-left a{
+	font-size:12px;
+	line-height:18px;
+	color:rgba(0, 0, 0, 0.3);
+	border-bottom: 1px dotted;
+}
+.filter-links-left a:first-of-type{
+	color:#81b3d2;
+	border:none;
+}
+
+
 
 .result-search-item{
 	display: flex;

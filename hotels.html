@@ -37,37 +37,45 @@
 			<h1 class="visually-hidden">Поиск гостинницы</h1>
 			<section class="main-search">
 			 <form method="post" action="https://echo.htmlacademy.ru">
-				<div class="add-service-filter">
-					<p class="add-service-filter-title">Инфраструктура:</p>
-					<label class="add-service-filter-checkbox"><input name="filter-pool" type="checkbox"><span>Бассейн</span></label>
-					<label class="add-service-filter-checkbox"><input name="filter-parking"  type="checkbox"> <span>Парковка</span> </label>
-					<label class="add-service-filter-checkbox" ><input name="filter-wifi"  type="checkbox"> <span>Wi-Fi</span> </label>
-				</div>
-				<div class="type-houы-filter">
-					<p class="add-service-filter-title">Тип жилья:</p>
-					<label class="add-service-filter-checkbox"><input name="filter-hotel" type="checkbox"> <span>Гостинница</span> </label>
-					<label class="add-service-filter-checkbox"><input name="filter-motel" type="checkbox"> <span>Мотель</span> </label>
-					<label class="add-service-filter-checkbox"><input name="filter-apartments" type="checkbox"> <span>Апартаменты</span> </label>
+				<div class="left-filter">
+					<div class="add-service-filter">
+						<p class="filter-title">Инфраструктура:</p>
+						<label class="filter-checkbox"><input name="filter-pool" type="checkbox"><span>Бассейн</span></label>
+						<label class="filter-checkbox"><input name="filter-parking"  type="checkbox"> <span>Парковка</span> </label>
+						<label class="filter-checkbox" ><input name="filter-wifi"  type="checkbox"> <span>Wi-Fi</span> </label>
+					</div>
+					<div class="type-hour-filter">
+						<p class="filter-title">Тип жилья:</p>
+						<label class="filter-checkbox"><input name="filter-hotel" type="checkbox"> <span>Гостинница</span> </label>
+						<label class="filter-checkbox"><input name="filter-motel" type="checkbox"> <span>Мотель</span> </label>
+						<label class="filter-checkbox"><input name="filter-apartments" type="checkbox"> <span>Апартаменты</span> </label>
+					</div>
 				</div>
 				<div class="price-filter">
-					<p class="add-service-filter-title">Стоимость в сутки (Р):</p>
-					<p>
-						<span>От <input name="min-price" value="0"></span>
-						<span>До <input name="max-price" value="3000"></span>
+					<p class="filter-title">Стоимость в сутки (Р):</p>
+					<p class="price-value">
+						<span>От <input class="price-input" name="min-price" value="0"></span>
+						<span>До <input class="price-input" name="max-price" value="3000"></span>
 					</p>
 					<!-- Ценовой ползунок -->
 					<button type="submit">Показать</button>
 				</div>
 			 </form>
 			 <div class="filter-links">
-				<span>Найдено:3</span>
-				<a href="">Сортировка:</a>
-				<a href="">По цене:</a>
-				<a href="">По типу</a>
-				<a href="">По рейтингу</a>
+				<div class="filter-links-left">
+					<span class="filter-result">Найдено: 3</span>
+					<p>Сортировка:</p>
+					<a href="">По цене:</a>
+					<a href="">По типу</a>
+					<a href="">По рейтингу</a>
+				</div>
 				<p class="filter-links-arrow">
-					<a><span class="visually-hidden">Ссылка для сотртировка по убыванию</span></a>
-					<a><span class="visually-hidden">Ссылка для сотртировка по возрастанию</span></a>
+					<a>
+						<img src="../img/icon-up-dir.svg" alt="Ссылка для сортировки по убыванию">
+					</a>
+					<a>
+						<img src="../img/icon-up-dir.svg" alt="Ссылка для сортировки по возрастанию">
+					</a>
 				</p>
 			 </div>
 			</section>
