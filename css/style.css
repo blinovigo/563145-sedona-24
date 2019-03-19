@@ -1,5 +1,5 @@
 body { margin: 0; }
-img { max-width: 100%; }
+img {max-width: 100%;}
 a { text-decoration: none;
 	color:inherit;
 	}
@@ -24,14 +24,21 @@ html {
 main{
 	font-family: 'PT Sans', sans-serif;
 	text-transform:uppercase;
+	box-shadow: 0px 5px 15px 0 grey;
 }
 
 .main-header{
 	background:url('../img/mount_sedons.jpg') no-repeat;
 	background-size:cover;
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
+	height: 564px;
 }
+
+.header-hotels{
+	height: 56px;
+}
+
 .main-header nav{
 	background-color:white;
 	height:56px;
@@ -47,18 +54,18 @@ main{
 }
 
 .link-list li{
-	width:239px;
+	width: 239px;
 	text-align:center;
-
+	/* letter-spacing: 0.64px; */
 }
 
 .link-list-item a{
 	font-size: 14px;
-    font-weight: bold;
-    line-height: 26px;
-    display: inline-block;
-    margin: 15px 0 15px 0;
-    color: black;
+	font-weight: bold;
+	line-height: 26px;
+	display: inline-block;
+	margin: 13px 0 15px 0;
+	color: black;
 }
 
 .link-list-item .sedana-logo{
@@ -66,7 +73,9 @@ main{
 }
 
 .welcome-img{
-	margin: 76px auto 79px auto;
+	height: 353px;
+	width: 459px;
+	margin: 76px auto auto auto;
 }
 
 .review{
@@ -78,57 +87,66 @@ main{
 	font-weight: bold;
 	line-height: 26px;
 	color:black;
-	margin:61px auto 0 auto;
-	width:440px;
+	margin: 58px auto 0 auto;
+	width: 460px;
+	letter-spacing: 0.1px;
 }
 .review h2{
 	font-size: 14px;
 	line-height: 26px;
 	color:#333333;
-	margin: 32px auto 50px auto;
+	letter-spacing: 0.1px;
+	margin: 28px auto 50px auto;
 }
 
 .reason-1{
 	display:flex;
-	min-height:256px;
-	
+	height: 255px;
 }
 
 .reason-title{
 	background-color:#81b3d2;
 	color:#f2f2f2;
-	width:400px;
-	padding:46px 60px;
+	width: 402px;
+	padding: 46px 47px;
 	text-align:center;
 }
 .reason-title h3{
 	font-size: 21px;
 	font-weight: bold;
+	line-height: 22px;
+	letter-spacing: 0.3px;
 	padding:0;
 	margin:0;
 }
 .reason-title p{
 	font-size: 14px;
-    margin: 19px 0 0 0;
-
+	margin: 23.5px 0 0 0;
+	letter-spacing: 0.2px;
+	line-height: 19px;
+	color: white;
 }
 
 .reason-1-img{
 	height:100%;
+	flex-grow: 1;
 }
 
 .reason-1-review-list{
 	display:flex;
 	list-style:none;
-	justify-content:space-around;
-	padding-top: 60px;
-	padding-bottom:85px;
+	justify-content: space-between;
+	padding: 58px 55px 0 55px;
 	height:330px;
 	margin:0;
 }
 
 .reason-1-review-item{
-	width:252px;
+	width: 289px;
+}
+
+.reason-1-review-item img{
+	height:72px;
 }
 
 .reason-1-review-list h5{
@@ -137,7 +155,7 @@ main{
 	line-height:21px;
 	color:black;
 	margin-top:29px;
-	margin-bottom:21px;
+	margin-bottom: 23px;
 }
 .reason-1-review-list p{
 	font-size: 14px;
@@ -149,41 +167,35 @@ main{
 	display:flex;
 }
 
-.other-reason-title{
-	background-color: #f2f2f2;
-    display: flex;
+.other-reason .reason-title {
+	    padding: 46px 45.3px;
 }
 
-.other-reason h3{
-	font-size: 21px;
-	font-weight: bold;
-	line-height:21px;
-	color:white;
-}
-.other-reason p{
-	font-size: 14px;
-	line-height:21px;
-	color:white;
+.other-reason-title{
+	background-color: #f2f2f2;
+	height: 256px;
+	display: flex;
 }
 
 .other-reason-title section{
-	padding:50px 95px 63px;
+	padding: 48px 69px 63px;
+	width: 400px;
 }
 
 .other-reason-title h3{
 	font-size: 21px;
 	font-weight: bold;
 	line-height:21px;
+	letter-spacing: 0.5px;
 	color:black;
 	margin:0;
 }
 .other-reason-title p{
 	font-size: 14px;
 	font-weight: bold;
-	line-height:21px;
+	line-height: 20px;
 	color:rgba(0, 1, 1, 0.2);
-	margin:0;
-	margin-top:19px;
+	margin: 23px 0 0 0;
 }
 
 
@@ -192,7 +204,7 @@ main{
 	font-size: 14px;
 	line-height:24px;
 	color:#333333;
-	margin:57px auto 52px auto;
+	margin: 50px auto 48px auto;
 	text-align:center;
 }
 .search-text span{
@@ -201,7 +213,7 @@ main{
 	line-height:36px;
 	color:black;
 	display:block;
-	margin-bottom:36px;
+	margin-bottom: 25px;
 }
 
 .search-title {
@@ -213,7 +225,7 @@ main{
 	height:86px;
 	width:568px;
 	margin: auto;
-    padding: 30px 0;
+	padding: 28px 0 0 0;
 	text-align:center;
 }
 
@@ -277,8 +289,10 @@ main{
 
 .amount-block-wrapper input{
 	height: 38px;
-    width: 38px;
+	width: 38px;
+	font-weight: bold;
 	padding:0;
+	text-align: center;
 }
 
 .amount-block-wrapper label{
@@ -313,8 +327,36 @@ main{
 
 .left-filter{
 	display:flex;
-	
 }
+
+.filter-checkbox input{
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 20px;
+}
+
+.filter-checkbox span{
+	position: relative;
+	padding: 0 0 0 40px;
+	cursor: pointer;
+}
+
+.filter-checkbox span:before{
+	content: '';
+	position: absolute;
+	top: -4px;
+	left: 0;
+	width: 23px;
+	height: 23px;
+	background: url(../img/checkbox-on.svg);
+}
+
+.checkbox-off span:before{
+	background: url(../img/checkbox-off.svg);
+}
+
+
 
 .add-service-filter{
 	display: flex;
@@ -496,7 +538,6 @@ main{
 
 /* footer */
 .main-footer{
-    position: absolute;
     width: 1200px;
     display: flex;
     justify-content: space-between;
@@ -533,8 +574,23 @@ main{
     display: inline-block;
 }
 
-.main-footer-soc-link-item{
-	padding:16px 15px;
+.main-footer-soc-link-item a{
+    height: 100%;
+    display: flex;
+}
+.main-footer-soc-link-item img{
+	display: block;
+    margin: auto;
+}
+
+.main-footer-soc-link-list li:nth-child(1) img{
+	height:15px;
+}
+.main-footer-soc-link-list li:nth-child(2) img{
+	height:22px;
+}
+.main-footer-soc-link-list li:nth-child(3) img{
+	height:16px;
 }
 
 .main-footer-studio-link img{
