@@ -108,37 +108,45 @@
 					<span>Заинтересовались? </span>
 					Укажите предпологаемые даты поездки,<br> и мы покажем Вам лучшие предложения гостинниц в Седоне
 				</p>
-				<h2 class="search-title">Поиск гостинниц в Седоне</h2>
+				<h2 class="search-title">Поиск гостиницы в Седоне</h2>
 				<div class="search-hotels-background">
 					<form class="search-hotels" method="post" action="https://echo.htmlacademy.ru">
 						<label class="data-input">
-							Дата заезда :
+							<span class="data-input-span">Дата заезда:</span>
 							<input type="data" name="arrival_date" placeholder="24 апреля 2017">
 						</label>
 						<label class="data-input">
-							Дата выезда :
+							<span class="data-input-span">Дата выезда:</span>
 							<input type="data" name="departure_date" placeholder="4 июля 2017">
 						</label>
 						<div class="amount-block-wrapper">
-							<p class="search-hotels-adults">
-								<label for="amount_adults">Взрослые : </label>
-								<button class="amount_button" type="button">-</button>
-								<input id="amount_adults" name="amount_adults" value="2">
-								<button class="amount_button" type="button">+</button>
-							</p>
-							<p class="search-hotels-children">
-								<label for="amount_children">Дети : </label>
-								<button type="button" class="amount_button">-</button>
-								<input id="amount_children" name="amount_children" value="0">
-								<button type="button" class="amount_button">+</button>
-							</p>
+							<div class="amount-block">
+								<p class="search-hotels-adults">
+									<label for="amount_adults">Взрослые: </label>
+									<div class="button-wrapper">
+										<button class="amount_button" type="button">-</button>
+										<input id="amount_adults" name="amount_adults" value="2">
+										<button class="amount_button" type="button">+</button>
+									</div>
+								</p>
+							</div>
+							<div class="amount-block">
+								<p class="search-hotels-children">
+									<label for="amount_children">Дети: </label>
+									<div class="button-wrapper">
+										<button type="button" class="amount_button">-</button>
+										<input id="amount_children" name="amount_children" value="0">
+										<button type="button" class="amount_button">+</button>
+									</div>
+								</p>
+							</div>
 						</div>
 						<button class="submit-button" type="submit">Найти</button>
 					</form>
 				</div>
 			</section>
 			
-			<footer class="main-footer">
+			<footer class="main-footer-index">
 				<a class="main-footer-home-link" href="">#VISITSEDONA</a>
 				<ul class="main-footer-soc-link-list">
 					<li class="main-footer-soc-link-item"><a href=""><img src="img/twitter-icon.svg"> </a></li>

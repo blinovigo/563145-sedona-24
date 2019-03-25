@@ -56,7 +56,7 @@
 						<p class="filter-title">Тип жилья:</p>
 						<label class="filter-checkbox">
 							<input name="filter-hotel" id="filter-hotel" type="checkbox"> 
-							<span>Гостинница</span> 
+							<span>Гостиница</span> 
 						</label>
 						<label class="filter-checkbox">
 							<input name="filter-motel" id="filter-motel" type="checkbox"> 
@@ -70,11 +70,17 @@
 				</div>
 				<div class="price-filter">
 					<p class="filter-title">Стоимость в сутки (Р):</p>
-					<p class="price-value">
-						<span>От <input class="price-input" name="min-price" value="0"></span>
-						<span>До <input class="price-input" name="max-price" value="3000"></span>
-					</p>
-					<!-- Ценовой ползунок -->
+					<div class="price-value">
+						<label class="min-price">От <input class="price-input" type="text" name="min-price" value="0"></label>
+						<label class="min-price">До <input class="price-input" type="text" name="max-price" value="3000"></label>
+					</div>
+					<div class="price-controls">
+						<div class="scale">
+						  <div class="bar"></div>
+						</div>
+						<div class="price-toggle price-toggle-min"></div>
+						<div class="price-toggle price-toggle-max"></div>
+					 </div>
 					<button type="submit">Показать</button>
 				</div>
 			 </form>
