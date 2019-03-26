@@ -61,7 +61,7 @@ main {
 	display: flex;
 	justify-content: space-between;
 	margin: 0;
-	padding: 0;
+    padding: 0;
 }
 
 .link-list li {
@@ -69,30 +69,12 @@ main {
 	text-align: center;
 }
 
-.link-list-item:nth-child(2) {
-	padding-left: 5px;
-}
-
-.link-list-item:nth-child(3) {
-	width: 244px;
-}
-
-.link-list-item:nth-child(4) {
-	padding-left: 1px;
-	letter-spacing: 0.3px;
-}
-
-.link-list-item:nth-child(5) {
-	padding-left: 15px;
-}
-
 .link-list-item a {
 	font-size: 14px;
 	font-weight: bold;
-	letter-spacing: px;
 	line-height: 26px;
 	display: inline-block;
-	margin: 14px 0 15px 0;
+	margin: 13px 0 15px 0;
 	color: black;
 }
 
@@ -415,19 +397,21 @@ main {
 	position: absolute;
 	top: -4px;
 	left: 0;
-	width: 23px;
-	height: 23px;
-	background: url(../img/checkbox-on.svg);
+	width: 27px;
+	height: 27px;
+	background: url(../img/checkbox-on.svg) no-repeat;
+	background-size: contain;
 }
 
 .checkbox-off span:before {
-	background: url(../img/checkbox-off.svg);
+	background: url(../img/checkbox-off.svg) no-repeat;
+	background-size: 86%;
 }
 
 .add-service-filter {
 	display: flex;
-    flex-direction: column;
-	padding-right: 115px;
+	flex-direction: column;
+	padding-right: 116px;
 }
 
 .filter-title {
@@ -738,7 +722,7 @@ main {
 	font-weight: bold;
 	line-height: 26px;
 	color: black;
-	padding: 0 30px 6px 0;
+	padding: 0 30px 0 0;
 }
 
 .main-footer-soc-link-list {
@@ -794,7 +778,7 @@ main {
 	font-size: 14px;
 	line-height: 26px;
 	color: black;
-	padding: 0 8px 6px 0;
+	padding-right: 8px;
 }
 
 .visually-hidden {
