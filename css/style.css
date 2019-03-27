@@ -1,28 +1,27 @@
-a { 
+a {
 	text-decoration: none;
 	color: inherit;
 }
 
-.feedback { 
-	color: black 
+.feedback {
+	color: black
 }
 
-.feedback ul { 
-	list-style: none 
-
+.feedback ul {
+	list-style: none
 }
 
-.feedback p { 
-	margin-bottom: 0 
+.feedback p {
+	margin-bottom: 0
 }
 
-html { 
+html {
 	box-sizing: border-box;
-	background-color: #f2f2f2;	
+	background-color: #f2f2f2;
 }
 
-*, *::before, *::after { 
-	box-sizing: inherit; 
+*, *::before, *::after {
+	box-sizing: inherit;
 }
 
 .main-wrapper {
@@ -31,20 +30,23 @@ html {
 	background-color: white;
 }
 
+body {
+	font-family: 'PT Sans', Arial, sans-serif;
+}
+
 main {
-	font-family: 'PT Sans', sans-serif;
 	text-transform: uppercase;
-	box-shadow: 0px 5px 15px 0 rgba(0,1,1,0.2);
+	box-shadow: 0 5px 15px 0 rgba(0,1,1,0.2);
 	position: relative;
 }
 
 .main-header {
 	background: url(../img/mount_sedons.jpg) no-repeat;
-    background-size: cover;
-    background-position: 50% 12%;
-    display: flex;
-    flex-direction: column;
-    height: 564px;
+	background-size: cover;
+	background-position: 50% 12%;
+	display: flex;
+	flex-direction: column;
+	height: 564px;
 }
 
 .header-hotels {
@@ -53,7 +55,7 @@ main {
 
 .main-header nav {
 	background-color: white;
-	height: 56px;
+	height: 57px;
 }
 
 .link-list {
@@ -61,7 +63,7 @@ main {
 	display: flex;
 	justify-content: space-between;
 	margin: 0;
-    padding: 0;
+	padding: 0;
 }
 
 .link-list li {
@@ -74,8 +76,30 @@ main {
 	font-weight: bold;
 	line-height: 26px;
 	display: inline-block;
-	margin: 13px 0 15px 0;
+	margin: 14px 0 15px 0;
 	color: black;
+}
+
+.link-list-item:nth-child(1) {
+	margin-left: -1px;
+}
+
+.link-list-item:nth-child(2) {
+	letter-spacing: 0.1px;
+	padding-left: 3px;
+}
+
+.link-list-item:nth-child(3) {
+	padding-right: 1px;
+}
+
+.link-list-item:nth-child(4) {
+	letter-spacing: 0.5px;
+	padding-left: 3px;
+}
+
+.link-list-item:nth-child(5) {
+	padding-left: 15px;
 }
 
 .link-list-item .sedana-logo {
@@ -83,7 +107,7 @@ main {
 }
 
 .welcome-img {
-	height: 353px;
+	height: 350px;
 	width: 459px;
 	margin: 76px auto auto auto;
 }
@@ -97,7 +121,7 @@ main {
 	font-weight: bold;
 	line-height: 26px;
 	color: black;
-	margin: 58px auto 0 auto;
+	margin: 60px auto 0 auto;
 	width: 460px;
 	letter-spacing: 0.1px;
 }
@@ -106,19 +130,19 @@ main {
 	line-height: 26px;
 	color: #333333;
 	font-weight: 400;
-	letter-spacing: 0.1px;
-	margin: 28px auto 50px auto;
+	letter-spacing: 0.08px;
+	margin: 27px auto 51px auto;
 }
 
 .reason-1 {
 	display: flex;
-	height: 255px;
+	height: 256px;
 }
 
 .reason-title {
 	background-color: #81b3d2;
 	color: #f2f2f2;
-	width: 402px;
+	width: 400px;
 	padding: 46px 47px;
 	text-align: center;
 }
@@ -134,9 +158,9 @@ main {
 
 .reason-title p {
 	font-size: 14px;
-	margin: 23.5px 0 0 0;
+	margin: 22px 0 0 0;
 	letter-spacing: 0.2px;
-	line-height: 20px;
+	line-height: 21px;
 	color: white;
 }
 
@@ -149,7 +173,7 @@ main {
 	display: flex;
 	list-style: none;
 	justify-content: space-between;
-	padding: 62px 55px 0 55px;
+	padding: 60px 55px 0 55px;
 	height: 330px;
 	margin: 0;
 }
@@ -167,7 +191,7 @@ main {
 	font-weight: bold;
 	line-height: 21px;
 	color: black;
-	margin-top: 29px;
+	margin-top: 26px;
 	margin-bottom: 23px;
 }
 
@@ -192,7 +216,7 @@ main {
 }
 
 .other-reason-title section {
-	padding: 48px 69px 63px;
+	padding: 46px 69px 63px;
 	width: 400px;
 }
 
@@ -207,16 +231,16 @@ main {
 
 .other-reason-title p {
 	font-size: 14px;
-	font-weight: bold;
-	line-height: 20px;
+	font-weight: 400;
+	line-height: 21px;
 	color: #333333;
-	margin: 23px 0 0 0;
+	margin: 22px 0 0 0;
 }
 
 .search-text {
 	font-size: 13px;
-	letter-spacing: 0.4px;
-	line-height: 26px;
+	letter-spacing: 0.6px;
+	line-height: 25px;
 	color: #333333;
 	margin: 50px auto 46px auto;
 	text-align: center;
@@ -228,7 +252,8 @@ main {
 	line-height: 36px;
 	color: black;
 	display: block;
-	margin-bottom: 25px;
+	margin-bottom: 23px;
+	letter-spacing: 0.2px;
 }
 
 .search-title {
@@ -240,7 +265,7 @@ main {
 	height: 86px;
 	width: 568px;
 	margin: auto;
-	padding: 28px 0 0 0;
+	padding: 30px 0 0 0;
 	text-align: center;
 }
 
@@ -272,16 +297,16 @@ main {
 
 .data-input-span {
 	font-size: 14px;
-    font-weight: bold;
-    line-height: 26px;
+	font-weight: bold;
+	line-height: 26px;
 }
 
 .data-input input {
 	width: 346px;
 	background: url(../img/calendar.svg) no-repeat;
-    background-position: 97% 50%;
-    padding-left: 12px;
-    padding-right: 7px;
+	background-position: 97% 50%;
+	padding-left: 12px;
+	padding-right: 7px;
 }
 
 .search-hotels p {
@@ -290,7 +315,6 @@ main {
 
 .search-hotels input {
 	background-color: #f2f2f2;
-	/* color: black; */
 	border: none;
 	height: 38px;
 	font-weight: bold;
@@ -439,29 +463,29 @@ main {
 
 .price-filter .filter-title {
 	margin: 0 0 9px 0;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 21px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 21px;
 }
 
 .price-value {
 	position:relative;
 	height: 36px;
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 	font-size: 0px;
-    border: 2px solid #ffffff;
-    border-radius: 2px;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
 }
 
 .price-value::after {
-	content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 2px;
-    height: 22px;
-    transform: translate(-50%, -50%);
-    background: #ffffff;
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 2px;
+	height: 22px;
+	transform: translate(-50%, -50%);
+	background: #ffffff;
 }
 
 .price-value label {
@@ -474,8 +498,8 @@ main {
 
 .price-value .min-price,
 .price-value .max-price {
-    width: 148px;
-    padding-left: 65px;
+	width: 148px;
+	padding-left: 65px;
 }
 
 .price-input {
@@ -490,63 +514,63 @@ main {
 }
 
 .price-controls {
-    position: relative;
-    margin-bottom: 32px;
+	position: relative;
+	margin-bottom: 32px;
 }
 
 .price-controls .scale {
-    height: 2px;
-    background: rgba(255, 255, 255, 0.3);
+	height: 2px;
+	background: rgba(255, 255, 255, 0.3);
 }
 
 .price-controls .bar {
-    width: 80%;
-    height: 2px;
-    background: #ffffff;
+	width: 80%;
+	height: 2px;
+	background: #ffffff;
 }
 
 .price-toggle {
-    position: absolute;
-    top: -9px;
-    width: 4px;
-    height: 4px;
-    background: #ababab;
-    border: 8px solid #ffffff;
-    border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-    cursor: pointer;
-    box-sizing: content-box;
+	position: absolute;
+	top: -9px;
+	width: 4px;
+	height: 4px;
+	background: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
+	box-sizing: content-box;
 }
 
 .price-toggle:hover {
-    background: #1c4f80;
+	background: #1c4f80;
 }
 
 .price-toggle-min {
-    left: 0;
+	left: 0;
 }
 
 .price-toggle-max {
-    left: 80%;
+	left: 80%;
 }
 
 .price-filter button {
-    display: block;
-    padding: 5px 35px;
-    font-size: 14px;
-    line-height: 20px;
-    color: #ffffff;
-    text-transform: uppercase;
-    background: transparent;
-    border: 2px solid #ffffff;
-    border-radius: 2px;
-    cursor: pointer;
-    align-self: center;
+	display: block;
+	padding: 5px 35px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #ffffff;
+	text-transform: uppercase;
+	background: transparent;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	cursor: pointer;
+	align-self: center;
 }
 
 .price-filter button:hover {
-    color: #000000;
-    background: #ffffff;
+	color: #000000;
+	background: #ffffff;
 }
 
 .price-filter span:first-child {
@@ -601,7 +625,6 @@ main {
 
 .filter-links-arrow a {
 	padding:0 3px;
-	
 }
 
 .result-search-item {
@@ -692,29 +715,29 @@ main {
 /* footer */
 
 .main-footer-index {
-    width: 1200px;
-    position: absolute;
-    opacity: 0.9;
-    bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 101px 0 132px;
-    height: 120px;
-    background: rgba(255,255,255,0.9);
+	width: 1200px;
+	position: absolute;
+	opacity: 0.9;
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 101px 0 132px;
+	height: 120px;
+	background: rgba(255,255,255,0.9);
 }
 
 .main-footer {
-    width: 1200px;
-    position: static;
-    opacity: 0.9;
-    bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 101px 0 132px;
-    height: 120px;
-    background: rgba(255,255,255,0.9);
+	width: 1200px;
+	position: static;
+	opacity: 0.9;
+	bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 101px 0 132px;
+	height: 120px;
+	background: rgba(255,255,255,0.9);
 }
 
 .main-footer-home-link {
@@ -739,17 +762,17 @@ main {
 	background-color: #81b3d2;
 	height: 48px;
 	width: 46px;
-    display: inline-block;
+	display: inline-block;
 }
 
 .main-footer-soc-link-item a {
-    height: 100%;
-    display: flex;
+	height: 100%;
+	display: flex;
 }
 
 .main-footer-soc-link-item img {
 	display: block;
-    margin: auto;
+	margin: auto;
 }
 
 .main-footer-soc-link-list li:nth-child(1) img {
