@@ -105,32 +105,32 @@
 						<form class="search-hotels" method="post" action="https://echo.htmlacademy.ru">
 							<label class="data-input">
 								<span class="data-input-span">Дата заезда:</span>
-								<input type="data" name="arrival_date" placeholder="24 апреля 2017">
+								<input type="date" name="arrival_date" value="24 апреля 2017">
 							</label>
 							<label class="data-input">
 								<span class="data-input-span">Дата выезда:</span>
-								<input type="data" name="departure_date" placeholder="4 июля 2017">
+								<input type="date" name="departure_date" value="4 июля 2017">
 							</label>
 							<div class="amount-block-wrapper">
 								<div class="amount-block">
-									<p class="search-hotels-adults">
+									<div class="search-hotels-adults">
 										<label for="amount_adults">Взрослые: </label>
 										<div class="button-wrapper">
 											<button class="amount_button" type="button">-</button>
 											<input id="amount_adults" name="amount_adults" value="2">
 											<button class="amount_button" type="button">+</button>
 										</div>
-									</p>
+									</div>
 								</div>
 								<div class="amount-block">
-									<p class="search-hotels-children">
+									<div class="search-hotels-children">
 										<label for="amount_children">Дети: </label>
 										<div class="button-wrapper">
 											<button type="button" class="amount_button">-</button>
 											<input id="amount_children" name="amount_children" value="0">
 											<button type="button" class="amount_button">+</button>
 										</div>
-									</p>
+									</div>
 								</div>
 							</div>
 							<button class="submit-button" type="submit">Найти</button>
